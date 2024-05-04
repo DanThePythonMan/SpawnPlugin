@@ -1,0 +1,22 @@
+name: SpawnTP
+version: '1.0-SNAPSHOT'
+main: me.danthepythonman.spawntp.SpawnTP
+api-version: '1.20'
+commands:
+  setspawntp:
+    description: Sets the spawn tp coordinates
+    usage: /setspawntp
+    permission-message: "Sorry. You don't have permission to run this."
+  spawn:
+    description: Tps you to the set spawn
+    usage: /spawn
+    permission: SpawnTP.canTpSpawn
+    permission-message: "Sorry. You don't have permission to run this."
+
+permissions:
+  SpawnTP.canSetSpawn:
+    description: Allows the user to set the spawn location.
+    default: op
+  SpawnTP.canTpSpawn:
+    description: Allows the user to tp to the spawn location.
+    default: true
